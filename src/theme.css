@@ -1,0 +1,58 @@
+:root {
+  --background-primary-light: 255, 255, 255;
+  --accent-light: 51, 51, 51;
+
+  --background-primary-dark: 51, 51, 51;
+  --accent-dark: 238, 238, 238;
+}
+
+[data-theme="light"] {
+  --background-primary: var(--background-primary-light);
+  --accent: var(--accent-light);
+}
+
+[data-theme="dark"] {
+  --background-primary: var(--background-primary-dark);
+  --accent: var(--accent-dark);
+}
+
+body,
+body *,
+input::placeholder,
+.insert-row .title {
+  background-color: rgb(var(--background-primary)) !important;
+  color: rgb(var(--accent)) !important;
+}
+
+i {
+  background: none !important;
+}
+
+tbody tr.active td {
+  background-color: forestgreen !important;
+  color: rgb(var(--accent-dark)) !important;
+}
+
+*,
+html * {
+  scrollbar-width: thin;
+  scrollbar-color: forestgreen rgb(150, 150, 150);
+}
+
+*::-webkit-scrollbar,
+html *::-webkit-scrollbar {
+  height: 7px;
+  width: 7px;
+}
+
+*::-webkit-scrollbar-track,
+html *::-webkit-scrollbar-track {
+  background: rgb(150, 150, 150);
+}
+
+*::-webkit-scrollbar-thumb,
+html *::-webkit-scrollbar-thumb {
+  background-color: forestgreen;
+  border-radius: 2px;
+  border: 1px solid rgb(150, 150, 150);
+}
