@@ -15,3 +15,5 @@
 :heavy_check_mark: Сортировка записей.
 
 :heavy_check_mark: Переключение темы приложения.
+
+:heavy_check_mark: Тест подписи коммита.
